@@ -1,0 +1,33 @@
+# // Get token
+# GET http://localhost:3579/token
+
+###
+
+// login
+GET http://localhost:3579/login
+Content-Type: application/json
+
+{
+    "username": "marjo",
+    "password": "123456"
+}
+
+###
+
+// register a user
+POST http://localhost:3579/register
+Content-Type: application/json
+
+{
+    "username": "marjo",
+    "password": "123456"
+}
+
+###
+
+
+// Get secure message
+GET http://localhost:3579/secure
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hcmpvIiwiaWF0IjoxNjM0NjQ1MDgyLCJleHAiOjE2MzQ2NDUzODJ9.lqiqdfEvhhGVLLjjyeWMx7DYRqWyrQcN8T_wo_iQmSM
+
+###
